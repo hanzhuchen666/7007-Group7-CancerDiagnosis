@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .background{
+    height:150%;
+    width :100%;
+    float:left;
+    position:absolute;
+    top:5px;
+    }
+
+    .text{
+    height:150px;
+    width :500px;
+    color: white;
+    position:fixed;
+    left:100px;
+    top:100px;
+    }
+    .ct{
+    height:150px;
+    width :500px;
+    position:fixed;
+    left:100px;
+    top:350px;
+    }
+    .a{
+    height:150px;
+    width :500px;
+    position:fixed;
+    left:811px;
+    top:200px;
+    size: 200px
+    }
+    .c{
+    height:150px;
+    width :500px;
+    position:fixed;
+    left:811px;
+    top:250px;
+    size: 200px
+    }
+    .b{
+    height:150px;
+    width :500px;
+    position:fixed;
+    left:811px;
+    top:300px;
+    size: 200px
+    }
+    </style>
+</head>
+<body>
+<div>
+<img class="background" src="../../../static/images/daf.png">
+</div>
+<div class="text">
+    Tumor is a new organism formed by the changes of cellular genetic material under the action of various pathogenic factors, leading to abnormal gene expression and cell proliferation.Tumor can be divided into benign tumor and malignant tumor, among which, malignant tumor is also called cancer.Early symptoms of tumor are not obvious, with the progress of the disease can appear local mass, can appear pain, ulcers, bleeding, infection, obstruction, metastasis and other complications, severe cases can be life-threatening, especially malignant tumors, for people's health is a great impact.The treatment of tumors is mainly surgical resection, and malignant tumors also need radiation therapy, chemotherapy, endocrine therapy, targeted therapy and other comprehensive treatment according to the situation.
+</div>
+
+<img class="ct" src="../../../static/images/ct_scan.jpg">
+
+
+
+<form action="/upload_image/index" method="post" enctype="multipart/form-data">
+    <div class="a">
+    <input type="file" name="myfile" value="Submit my CT-Scan">
+</div>
+<div class="c">
+    <input type="submit" name="upload" value="upload image">
+</div>
+</form>
+
+<div class="b">
+    <a href="../nlp/chat">Get the Result & Contact Us</a>
+</div>
+
+
+</body>
+</html>

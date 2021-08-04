@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>聊天</title>
+<script src="../../../static/scripts/jquery-1.11.3.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+<link rel="stylesheet" href="../../../static/styles/reset.min.css">
+<link rel="stylesheet" href="../../../static/styles/style.css">
+    <script>
+        .text{
+    height:150px;
+    width :500px;
+    position:fixed;
+    left:811px;
+    top:300px;
+    size: 200px
+    }
+    </script>
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="container">
+        <div class="left">
+            <div class="top">
+                <input type="text" placeholder="Search" id="target_user"/>
+                <a href="javascript:;" class="search"></a>
+            </div>
+            <ul class="people" id="userlist">
+            </ul>
+        </div>
+        <div class="right">
+            <div class="top" id="right_top"><span><span class="name"></span></span></div>
+            <p class="text"> {{ text }} </p>
+            <form action="chat" method="post">
+            <div class="write">
+
+                <a href="javascript:;" class="write-link attach"></a>
+                <input type="text" name="input"/>
+                <a href="javascript:;" class="write-link smiley" onclick="createinfo()"></a>
+<!--                <a href="javascript:;" class="write-link send" onclick="sendmsg()"></a>-->
+                <input type="submit" class="write-link send" value="send">
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script  src="../../../static/scripts/index.js"></script>
+
+<div style="text-align:center;margin:1px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<!--<p>适用浏览器：360、FireFox、Chrome、Opera、傲游、搜狗、世界之窗. 不支持Safari、IE8及以下浏览器。</p>-->
+<!--<p>来源：<a href="http://127.0.0.1:8000/index/" target="_blank">DHF Studio</a></p>-->
+</div>
+</body>
+</html>
